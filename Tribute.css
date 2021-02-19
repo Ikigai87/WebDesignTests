@@ -1,16 +1,15 @@
 /* Tribute.css */
 body {
- background-color: #FF3333;
- color: #669999;
+ background-color: #E18A07;
+ color: #C0C0C0;
 }
 h1 {
- color: #FFFF33;
+ color: #C0C0C0;
  text-align: center;
- font: italic 200% fantasy;
+ font: sans-serif;
 }
 p {
- background-color: #FFFF33;
- color: #333300;
+ color: #C0C0C0;
  text-align: right;
  border: 3px groove #FFFF33;
 }
