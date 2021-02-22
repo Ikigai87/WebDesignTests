@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <style>
+
+    * {
+        box-sizing: border-box;
+        } 
+    
+    body {
+        background-color:  #9BD7D5;
+    
+        }
+
+        .container {
+            height:auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: .6fr 1fr 0.135fr;
+            grid-gap: 10px 10px;
+            }
+        
+        .cell {
+            background-color: #129793;
+            }
+        
+        .cell-1 {
+            grid-row: 1; 
+            grid-column: 1 / 4;
+            }
+        
+        .cell-2 {
+            grid-row: 2 / 4;
+            grid-column: 1 / 2;
+            }
+        
+        .cell-3 {
+            grid-row: 2;
+            grid-column: 2 / 3;
+            }
+        
+        .cell-4 {
+            grid-row: 2 / 4;
+            grid-column: 3 / 4;
+            display: flex;
+            align-items: center;
+            }
+
+        .cell-5 {
+            grid-row: 3;
+            grid-column: 2 / 3;
+            display: flex;
+            align-items: center;
+            } 
+
+        h1 {    
+            color: #FF7260;
+            font-size: 8vw;
+            font-family: 'Dancing Script';
+            vertical-align: middle;
+            text-align: center;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+            }
+
+        h3 {    
+            color: #FFF5C3;
+            font-size: 1.8vw;
+            font-family: 'Roboto';
+            text-align: center;
+            }        
+        
+        #tribute-info {   
+            color: #505050;
+            font-size: 1.4vw;
+            font-family: 'Roboto';
+            text-align: center;
+            }
+
+        #tribute-link {
+            color: #FFF5C3;
+            font-size: 1vw;
+            font-family: 'Roboto';
+            justify-content: center;
+            }
+
+        #block-quote {
+            color:  #FFF5C3;
+            font-size: 3vw;
+            font-family: 'dancing script';
+            text-align: center;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+            }
+
+        #img-caption {
+            color: #FFF5C3;
+            font-size: .5vw;
+            font-family: 'Roboto';
+            }
+
+        a:link, a:visited {
+            background-color:  #129793;
+            color: #505050;
+            text-decoration: underline;
+            }
+
+        a:hover, a:active {
+            color: #FF7260;
+            }   
+  
+  </style>
+  
+  <title>Yoshinori Ohsumi Tribute</title> 
+ 
+ </head>
+ 
+ <body id="main" class="container">
+    
+        <div class="cell cell-1" id="title">
+            <h1>Yoshinori Ohsumi</h1>
+        </div>
+        
+        <div class="cell cell-3" id="img-div">
+            <img id="image" src="OhsumiM1.jpg" object-fit= cover; width= 100%; min-height= 100%;>
+            <p id="img-caption">Photo of Yoshinori Ohsumi</p>            
+        </div>
+        
+        <div class="cell cell-2" id="tribute-info">            
+            <h3>Solo Researcher Nobel Prize Winner</h3><hr>
+        
+            <p>Yoshinori Ohsumi (大隅 良典, Ōsumi Yoshinori,<br> born February 9, 1945) is a Japanese cell biologist
+                famous for receiving the <a id="nobel-link" target="_blank" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5240711/">'2016 Nobel Prize for Physiology'</a>
+                for his discoveries on how cells recycle and renew their content, a process called
+                <a id="autophagy-link" target="_blank" href="https://www.healthline.com/health/autophagy">autophagy</a>. 
+                Fasting and exercise activate autophagy, which helps slow down the aging process and 
+                has a positive impact on cell renewal.</p>
+        </div>
+        
+        <div class="cell cell-4" id="block-quote">            
+            <blockquote>"Life is an equilibruim state between synthesis and degradation of proteins."</blockquote>
+        </div>
+        
+        <div class="cell cell-5" id="tribute-link">
+            <a target="_blank" href="https://en.wikipedia.org/wiki/Yoshinori_Ohsumi">For more visit his Wikipage!</a>
+        </div>
+ </body>
+
+</html>
